@@ -1,0 +1,50 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Hi, I´m Alexis Gandara 💻 Software Engineer</h1>
+			<p>
+				¡Bienvenido a mi sitio oficial (Portafolio)! Aquí podrás encontrar información sobre mí, mi contacto, 
+				mi CV, varios proyectos realizados por mí, experiencia, entre otras cosas.
+			</p>
+			<p>
+				Este portafolio fue elaborado utilizando:
+				<li><a href="https://developer.mozilla.org/es/docs/Web/HTML/">HTML</a></li>
+				<li><a href="https://lenguajecss.com/css/introduccion/que-es-css/">CSS</a></li>
+				<li><a href="https://astro.build/">Astro</a></li>
+			</p>
+
+			<p>
+				<p>Te dejo mi currículum para que lo descargues y puedas ver más información detallada sobre mí.</p>
+				<button><a class="aa" href="Currículum_alexis.pdf" download="Currículum_alexis.pdf">Descargar CV</a></button>
+				
+			</p>
+			<p>Descubre Mis Trabajos y Mi Perfil:</p>
+			<ul>
+				<li><a href="blog">Proyectos</a></li>
+				<li><a href="about">Información sobre mí</a></li>
+			</ul>
+			<p>
+				Datos de contacto:
+				<li><a href="mailto:alexis20143@gmail.com">alexis20143@gmail.com</a></li>
+				<li>📲 +54 1135946948</li>
+
+			</p>
+			<p>
+				Gracias por leer esta introducción sobre mí. Espero que recorras la página y disfrutes de ella.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
