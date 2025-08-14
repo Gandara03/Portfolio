@@ -73,6 +73,8 @@ El portafolio incluye un sistema de gestión de contenido integrado, navegación
 
 ## Enlaces del Proyecto
 
-**🌐 Sitio Web en Producción**: [https://tu-portafolio.com](https://tu-portafolio.com)
+**🌐 Sitio Web en Producción**: [Portfolio Alexis Gandara](https://portfolio-agandara.vercel.app/)
+
+**💻 Código Fuente**: [Ver en GitHub](https://github.com/Gandara03/Portfolio)
 
 
