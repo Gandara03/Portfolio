@@ -1,0 +1,21 @@
+{
+  "name": "Alexis Gandara - Portafolio Profesional",
+  "short_name": "Alexis Gandara",
+  "description": "Portafolio profesional de Alexis Gandara, Analista IT especializado en automatización, blockchain e IA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#233a57",
+  "theme_color": "#233a57",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "technology"],
+  "lang": "es",
+  "dir": "ltr"
+}

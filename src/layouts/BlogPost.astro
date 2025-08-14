@@ -18,15 +18,20 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				width: calc(100% - 2em);
 				max-width: 100%;
 				margin: 0;
+				box-sizing: border-box;
+				overflow-x: hidden;
 			}
 			.hero-image {
 				width: 100%;
+				box-sizing: border-box;
 			}
 			.hero-image img {
 				display: block;
 				margin: 0 auto;
 				border-radius: 12px;
 				box-shadow: var(--box-shadow);
+				max-width: 100%;
+				height: auto;
 			}
 			.prose {
 				width: 720px;
@@ -34,6 +39,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				margin: auto;
 				padding: 1em;
 				color: rgb(var(--gray-dark));
+				box-sizing: border-box;
 			}
 			.title {
 				margin-bottom: 1em;
@@ -50,6 +56,50 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			}
 			.last-updated-on {
 				font-style: italic;
+			}
+			
+			/* Media Queries para Responsive Design */
+			@media (max-width: 768px) {
+				main {
+					width: 100%;
+					padding: 0 0.5em;
+				}
+				
+				.prose {
+					width: 100%;
+					max-width: 100%;
+					padding: 0.5em;
+				}
+				
+				.hero-image img {
+					border-radius: 8px;
+				}
+				
+				.title {
+					padding: 0.5em 0;
+				}
+				
+				.title h1 {
+					font-size: 1.8em;
+				}
+			}
+			
+			@media (max-width: 480px) {
+				main {
+					padding: 0 0.25em;
+				}
+				
+				.prose {
+					padding: 0.25em;
+				}
+				
+				.title h1 {
+					font-size: 1.5em;
+				}
+				
+				.hero-image img {
+					border-radius: 6px;
+				}
 			}
 		</style>
 	</head>

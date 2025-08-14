@@ -9,15 +9,27 @@ import FormattedDate from '../../components/FormattedDate.astro';
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
+
+const pageTitle = `Proyectos - ${SITE_TITLE}`;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead 
+			title={pageTitle}
+			description="Portafolio de proyectos profesionales de Alexis Gandara. Descubre proyectos de IA, automatización, blockchain, desarrollo web y análisis de datos."
+			image="/portafolio-programador.jpg"
+			keywords="proyectos, portafolio, IA, automatización, blockchain, desarrollo web, Alexis Gandara"
+		/>
 		<style>
 			main {
 				width: 960px;
+				max-width: 100%;
+				margin: 0 auto;
+				padding: 2rem;
+				box-sizing: border-box;
+				overflow-x: hidden;
 			}
 			ul {
 				display: flex;
@@ -29,6 +41,7 @@ const posts = (await getCollection('blog')).sort(
 			}
 			ul li {
 				width: calc(50% - 1rem);
+				box-sizing: border-box;
 			}
 			ul li * {
 				text-decoration: none;
@@ -41,6 +54,8 @@ const posts = (await getCollection('blog')).sort(
 			}
 			ul li:first-child img {
 				width: 100%;
+				max-width: 100%;
+				height: auto;
 			}
 			ul li:first-child .title {
 				font-size: 2.369rem;
@@ -48,6 +63,8 @@ const posts = (await getCollection('blog')).sort(
 			ul li img {
 				margin-bottom: 0.5rem;
 				border-radius: 12px;
+				max-width: 100%;
+				height: auto;
 			}
 			ul li a {
 				display: block;
@@ -68,19 +85,55 @@ const posts = (await getCollection('blog')).sort(
 			ul a:hover img {
 				box-shadow: var(--box-shadow);
 			}
+			
+			/* Media Queries para Responsive Design */
 			@media (max-width: 720px) {
-				ul {
-					gap: 0.5em;
+				main {
+					width: 100%;
+					padding: 1rem;
 				}
+				
+				ul {
+					gap: 1rem;
+				}
+				
 				ul li {
 					width: 100%;
 					text-align: center;
 				}
+				
 				ul li:first-child {
 					margin-bottom: 0;
 				}
+				
 				ul li:first-child .title {
-					font-size: 1.563em;
+					font-size: 1.8rem;
+				}
+				
+				.title {
+					font-size: 1.5rem;
+				}
+			}
+			
+			@media (max-width: 480px) {
+				main {
+					padding: 0.5rem;
+				}
+				
+				ul {
+					gap: 0.5rem;
+				}
+				
+				ul li:first-child .title {
+					font-size: 1.5rem;
+				}
+				
+				.title {
+					font-size: 1.3rem;
+				}
+				
+				.date {
+					font-size: 0.9rem;
 				}
 			}
 		</style>

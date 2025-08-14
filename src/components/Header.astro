@@ -48,6 +48,8 @@ import { SITE_TITLE } from '../consts';
 		padding: 0 1em;
 		background: #233a57;
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		box-sizing: border-box;
+		overflow-x: hidden;
 	}
 	h2 {
 		margin: 0;
@@ -62,12 +64,15 @@ import { SITE_TITLE } from '../consts';
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 1rem;
 	}
 	nav a {
 		padding: 1em 0.5em;
 		color: white;
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
+		white-space: nowrap;
 	}
 	nav a.active {
 		text-decoration: none;
@@ -77,9 +82,120 @@ import { SITE_TITLE } from '../consts';
 	.social-links a {
 		display: flex;
 	}
+	
+	.internal-links {
+		display: flex;
+		gap: 0.5rem;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		flex: 1;
+	}
+	
+	/* Media Queries para Responsive Design */
 	@media (max-width: 720px) {
+		header {
+			padding: 0 0.5em;
+		}
+		
+		nav {
+			flex-direction: row;
+			gap: 0.5rem;
+			padding: 0.5rem 0;
+			justify-content: space-between;
+		}
+		
+		h2 {
+			font-size: 0.9em;
+			flex-shrink: 0;
+			min-width: 120px;
+		}
+		
+		.internal-links {
+			justify-content: center;
+			gap: 0.25rem;
+			flex: 1;
+			margin: 0 0.5rem;
+		}
+		
+		nav a {
+			padding: 0.5em 0.25em;
+			font-size: 0.8em;
+		}
+		
 		.social-links {
-			display: none;
+			justify-content: flex-end;
+			flex-shrink: 0;
+			min-width: 120px;
+		}
+		
+		.social-links a {
+			padding: 0.25em;
+		}
+		
+		.social-links svg {
+			width: 24px;
+			height: 24px;
+		}
+	}
+	
+	@media (max-width: 480px) {
+		header {
+			padding: 0 0.25em;
+		}
+		
+		nav {
+			padding: 0.25rem 0;
+			gap: 0.25rem;
+		}
+		
+		h2 {
+			font-size: 0.8em;
+			min-width: 100px;
+		}
+		
+		.internal-links {
+			gap: 0.1rem;
+			margin: 0 0.25rem;
+		}
+		
+		nav a {
+			padding: 0.4em 0.15em;
+			font-size: 0.7em;
+		}
+		
+		.social-links {
+			min-width: 100px;
+		}
+		
+		.social-links svg {
+			width: 20px;
+			height: 20px;
+		}
+	}
+	
+	@media (max-width: 360px) {
+		h2 {
+			min-width: 80px;
+			font-size: 0.7em;
+		}
+		
+		.internal-links {
+			margin: 0 0.1rem;
+		}
+		
+		nav a {
+			font-size: 0.65em;
+			padding: 0.3em 0.1em;
+		}
+		
+		.social-links {
+			min-width: 80px;
+		}
+		
+		.social-links svg {
+			width: 18px;
+			height: 18px;
 		}
 	}
 </style>

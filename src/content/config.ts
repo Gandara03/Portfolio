@@ -10,6 +10,11 @@ const blog = defineCollection({
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
 		heroImage: z.string().optional(),
+		// Nuevos campos para SEO y Open Graph
+		keywords: z.string().optional(),
+		author: z.string().optional(),
+		category: z.string().optional(),
+		readTime: z.number().optional(),
 	}),
 });
 

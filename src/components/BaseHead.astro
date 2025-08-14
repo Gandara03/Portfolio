@@ -7,17 +7,26 @@ interface Props {
 	title: string;
 	description: string;
 	image?: string;
+	author?: string;
+	keywords?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
+const { 
+	title, 
+	description, 
+	image = '/portafolio-programador.jpg',
+	author = 'Alexis Gandara',
+	keywords = 'portafolio, desarrollador, programador, IT, blockchain, IA, automatización'
+} = Astro.props;
 ---
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="manifest" href="/manifest.json" />
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
@@ -31,6 +40,9 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
+<meta name="keywords" content={keywords} />
+<meta name="author" content={author} />
+<meta name="robots" content="index, follow" />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
@@ -38,10 +50,48 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={title} />
+<meta property="og:site_name" content="Alexis Gandara - Portafolio Profesional" />
+<meta property="og:locale" content="es_ES" />
 
-<!-- Twitter -->
+<!-- Twitter Card -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+<meta property="twitter:image:alt" content={title} />
+<meta property="twitter:creator" content="@BlockTech03" />
+<meta property="twitter:site" content="@BlockTech03" />
+
+<!-- Additional Meta Tags -->
+<meta name="theme-color" content="#233a57" />
+<meta name="msapplication-TileColor" content="#233a57" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="Alexis Gandara" />
+
+<!-- Schema.org structured data -->
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "Person",
+	"name": "Alexis Gandara",
+	"jobTitle": "Analista IT",
+	"description": description,
+	"url": Astro.url.href,
+	"image": new URL(image, Astro.url).href,
+	"sameAs": [
+		"https://www.linkedin.com/in/alexis-gandara-513a951a4/",
+		"https://twitter.com/BlockTech03",
+		"https://github.com/Gandara03"
+	],
+	"knowsAbout": [
+		"IT",
+		"Programación",
+		"Blockchain",
+		"Inteligencia Artificial",
+		"Automatización de Procesos"
+	]
+})} />

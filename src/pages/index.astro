@@ -8,7 +8,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <!doctype html>
 <html lang="es">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead 
+			title={SITE_TITLE} 
+			description={SITE_DESCRIPTION}
+			image="/portafolio-programador.jpg"
+			keywords="portafolio, desarrollador, programador, IT, blockchain, IA, automatización, Alexis Gandara"
+		/>
 	</head>
 	<body>
 		<Header />
@@ -93,6 +98,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 					max-width: 800px;
 					margin: 0 auto;
 					padding: 2rem;
+					box-sizing: border-box;
+					overflow-x: hidden;
 				}
 				.presentacion {
 					text-align: center;
@@ -163,6 +170,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 					margin: 3rem 0;
 					border-radius: 16px;
 					text-align: center;
+					box-sizing: border-box;
 				}
 
 				.cta-content h3 {
@@ -242,6 +250,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 					display: flex;
 					align-items: center;
 					gap: 1.5rem;
+					box-sizing: border-box;
 				}
 
 				.contact-card:hover {
@@ -286,14 +295,43 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 					color: #233a57;
 				}
 
+				/* Media Queries para Responsive Design */
 				@media (max-width: 768px) {
+					main {
+						padding: 1rem;
+						max-width: 100%;
+						width: 100%;
+						box-sizing: border-box;
+					}
+
+					.cta-section {
+						padding: 2rem 1rem;
+						margin: 2rem 0;
+					}
+
+					.cta-content h3 {
+						font-size: 2rem;
+					}
+
+					.cta-content p {
+						font-size: 1.1rem;
+					}
+
 					.cta-buttons {
 						flex-direction: column;
 						align-items: center;
+						gap: 1rem;
+					}
+
+					.btn {
+						width: 100%;
+						max-width: 300px;
+						text-align: center;
 					}
 
 					.contact-grid {
 						grid-template-columns: 1fr;
+						gap: 1rem;
 					}
 					
 					.contact-card {
@@ -301,6 +339,47 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 						flex-direction: column;
 						text-align: center;
 						gap: 1rem;
+					}
+
+					h3 {
+						font-size: 1.5rem;
+					}
+
+					.contacto h3 {
+						font-size: 1.5rem;
+					}
+				}
+
+				@media (max-width: 480px) {
+					main {
+						padding: 0.5rem;
+					}
+
+					.cta-section {
+						padding: 1.5rem 0.5rem;
+						margin: 1.5rem 0;
+					}
+
+					.cta-content h3 {
+						font-size: 1.5rem;
+					}
+
+					.cta-content p {
+						font-size: 1rem;
+					}
+
+					.contact-card {
+						padding: 1rem;
+					}
+
+					.contact-icon {
+						width: 50px;
+						height: 50px;
+					}
+
+					.contact-icon svg {
+						width: 24px;
+						height: 24px;
 					}
 				}
 			</style>
