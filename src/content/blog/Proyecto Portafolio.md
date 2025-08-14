@@ -1,214 +1,78 @@
 ---
-title: 'Proyecto Power Bi'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
-pubDate: 'Jul 01 2022'
-heroImage: 'public/power bi.png'
+title: 'Proyecto Portafolio'
+description: 'Portafolio personal profesional desarrollado con Astro, TypeScript y diseño moderno responsivo'
+pubDate: '2025-08-13'
+heroImage: '/portafolio-programador.jpg'
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+## Descripción del Proyecto
 
-## Headings
+Este proyecto representa el desarrollo completo de mi portafolio personal profesional utilizando tecnologías web modernas. El objetivo era crear una plataforma que no solo mostrara mis habilidades técnicas y experiencia profesional, sino que también demostrara competencias avanzadas en desarrollo full-stack, diseño responsivo y optimización de rendimiento.
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+El portafolio incluye un sistema de gestión de contenido integrado, navegación intuitiva, diseño moderno y optimización SEO completa, sirviendo como demostración práctica de mis capacidades como desarrollador web.
 
-# H1
+## Tecnologías Utilizadas
 
-## H2
+- **Framework Principal**: Astro 4.7.0 con TypeScript
+- **Frontend**: HTML5, CSS3, JavaScript ES6+, React.js
+- **Estilos**: CSS personalizado con variables CSS, Flexbox, Grid, Media Queries
+- **Integraciones**: MDX para contenido dinámico, RSS para feeds, Sitemap para SEO
+- **Build Tools**: Vite, Webpack optimizado para producción
+- **Deployment**: GitHub Pages, Netlify con CI/CD automático
+- **Control de Versiones**: Git, GitHub con workflow automatizado
+- **Herramientas**: VS Code, ESLint, Prettier
 
-### H3
+## Funcionalidades Principales
 
-#### H4
+- **Diseño Responsivo Avanzado**: Adaptación perfecta a todos los dispositivos y resoluciones
+- **Sistema de Navegación**: Menú intuitivo con transiciones suaves y navegación por teclado
+- **Página de Inicio**: Presentación profesional con secciones Hero, About, Skills y CTA
+- **Sección About**: Experiencia detallada, stack tecnológico y certificaciones
+- **Portafolio de Proyectos**: Galería interactiva con imágenes y descripciones detalladas
+- **Sistema de Blog**: Gestión de contenido con MDX, categorización y búsqueda
+- **Optimización SEO**: Meta tags, Open Graph, Schema markup y sitemap automático
+- **Performance**: Lazy loading, optimización de imágenes y assets, Core Web Vitals
 
-##### H5
+## Arquitectura del Sistema
 
-###### H6
+- **Arquitectura Estática**: Generación estática con Astro para máximo rendimiento
+- **Componentes Modulares**: Sistema de componentes reutilizables y mantenibles
+- **Sistema de Rutas**: Enrutamiento dinámico con generación automática de páginas
+- **Gestión de Estado**: Context API y hooks personalizados para estado global
+- **Integración MDX**: Sistema de contenido híbrido Markdown + JSX
+- **Build Optimizado**: Code splitting, tree shaking y optimización de bundles
+- **PWA Ready**: Service workers y manifest para funcionalidad offline
 
-## Paragraph
+## Desafíos Técnicos
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+- **Diseño Responsivo Complejo**: Implementación de layouts flexibles para múltiples dispositivos
+- **Optimización de Performance**: Reducción de First Contentful Paint y Largest Contentful Paint
+- **Integración MDX**: Configuración de sistema de contenido híbrido con TypeScript
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+- **Gestión de Assets**: Optimización automática de imágenes y recursos estáticos
+- **Compatibilidad Cross-Browser**: Aseguramiento de funcionamiento en navegadores legacy
+- **Build y Deployment**: Configuración de pipeline CI/CD con optimizaciones automáticas
 
-## Images
+## Resultados
 
-#### Syntax
+- **Portafolio Completamente Funcional**: Plataforma profesional operativa con todas las funcionalidades implementadas
+- **Diseño Moderno y Atractivo**: Interfaz visualmente impactante con UX optimizada
+- **Performance Excepcional**: Puntuación perfecta en Core Web Vitals y PageSpeed Insights
+- **Responsividad Total**: Funcionamiento perfecto en dispositivos móviles, tablets y desktop
 
-```markdown
-![Alt text](./full/or/relative/path/of/image)
-```
+- **Mantenibilidad**: Código limpio, documentado y fácil de mantener
 
-#### Output
+## Aprendizajes
 
-![blog placeholder](/blog-placeholder-about.jpg)
 
-## Blockquotes
+- **Diseño Responsivo Avanzado**: Implementación de layouts complejos y adaptativos
+- **Optimización de Performance**: Técnicas de mejora de Core Web Vitals y métricas de rendimiento
+- **Integración de Sistemas**: Configuración de MDX, RSS, Sitemap y herramientas de desarrollo
+- **CI/CD y Deployment**: Automatización de builds, testing y despliegue continuo
+- **Gestión de Contenido**: Sistema de blog integrado con gestión de proyectos dinámica
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+## Enlaces del Proyecto
 
-### Blockquote without attribution
+**🌐 Sitio Web en Producción**: [https://tu-portafolio.com](https://tu-portafolio.com)
 
-#### Syntax
 
-```markdown
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
-```
-
-#### Output
-
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
-
-### Blockquote with attribution
-
-#### Syntax
-
-```markdown
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-```
-
-#### Output
-
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
-## Tables
-
-#### Syntax
-
-```markdown
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
-```
-
-#### Output
-
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
-
-## Code Blocks
-
-#### Syntax
-
-we can use 3 backticks ``` in new line and write snippet and close with 3 backticks on new line and to highlight language specific syntac, write one word of language name after first 3 backticks, for eg. html, javascript, css, markdown, typescript, txt, bash
-
-````markdown
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
-````
-
-Output
-
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
-
-## List Types
-
-### Ordered List
-
-#### Syntax
-
-```markdown
-1. First item
-2. Second item
-3. Third item
-```
-
-#### Output
-
-1. First item
-2. Second item
-3. Third item
-
-### Unordered List
-
-#### Syntax
-
-```markdown
-- List item
-- Another item
-- And another item
-```
-
-#### Output
-
-- List item
-- Another item
-- And another item
-
-### Nested list
-
-#### Syntax
-
-```markdown
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-```
-
-#### Output
-
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-#### Syntax
-
-```markdown
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
-```
-
-#### Output
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.

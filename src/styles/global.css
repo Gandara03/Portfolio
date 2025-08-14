@@ -6,8 +6,8 @@
 
 
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
+	--accent: #233a57;
+	--accent-dark: #1a2a3f;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
@@ -162,7 +162,7 @@ hr {
 	white-space: nowrap;
 }
 button{
-	background-color: rgb(136, 100, 143); /* Fondo violeta */
+	background-color: #233a57; /* Fondo azul oscuro */
   	color: white; /* Texto blanco para mayor contraste */
   	border: none; /* Sin borde */
   	border-radius: 10px; /* Curvas en las esquinas */
