@@ -16,7 +16,18 @@
 	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
 	
-	/* Nuevas variables para modo oscuro con grises consistentes */
+	/* Variables para modo claro (por defecto) */
+	--bg-primary: #ffffff;
+	--bg-secondary: #f8f9fa;
+	--bg-tertiary: #e9ecef;
+	--text-primary: #000000;
+	--text-secondary: #333333;
+	--text-muted: #666666;
+	--border-color: #dee2e6;
+}
+
+/* Modo oscuro */
+[data-theme="dark"] {
 	--bg-primary: #2a2a2a;
 	--bg-secondary: #3a3a3a;
 	--bg-tertiary: #4a4a4a;
