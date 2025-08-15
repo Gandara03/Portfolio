@@ -38,7 +38,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				max-width: calc(100% - 2em);
 				margin: auto;
 				padding: 1em;
-				color: rgb(var(--gray-dark));
+				color: var(--text-primary);
 				box-sizing: border-box;
 			}
 			.title {
@@ -49,13 +49,15 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			}
 			.title h1 {
 				margin: 0 0 0.5em 0;
+				color: var(--text-primary);
 			}
 			.date {
 				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
+				color: var(--text-secondary);
 			}
 			.last-updated-on {
 				font-style: italic;
+				color: var(--text-muted);
 			}
 			
 			/* Media Queries para Responsive Design */
